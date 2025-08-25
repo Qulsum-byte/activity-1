@@ -1,20 +1,24 @@
-import turtle
+num_tuple = (10,20,30,40,50)
+print(num_tuple)
+print(num_tuple[1])
+print(num_tuple[-3])
 
-print("Create a 6-pointed star using Turtle")
 
-t = turtle.Turtle()
-t.speed(3)
+str_tuple = ("apple","banana","cherry","elder berry")
+print(str_tuple)
 
-# Number of star points
-points = 6  
-angle = 144  # Angle for star shape
+stu_tuple = ("apple",30,34.5,True)
 
-# Draw the star
-for _ in range(points):
-    t.forward(100)
-    t.right(angle)
-    t.forward(100)
-    t.left(72)  # Adjust to connect points properly
+print(stu_tuple)
+print(stu_tuple[0])
+print(stu_tuple[1])
+print(stu_tuple[2])
 
-# Keep the window open
-turtle.done()
+print(stu_tuple[1:3])
+
+
+nested_tuple = ((1,2,3,4,5),(6,7,8,9,10),(11,12,13,14,15))
+
+print(nested_tuple)
+print(nested_tuple[0])
+print(nested_tuple[1:2])
